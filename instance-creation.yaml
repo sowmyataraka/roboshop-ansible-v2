@@ -1,4 +1,4 @@
-- name: roboshop instances management
+- - name: roboshop instances management
   hosts: local
   connection: local
   vars:
@@ -84,4 +84,3 @@
       wait: false
     loop: "{{ instances  }}"  
     when: action == "delete"
-    
