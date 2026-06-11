@@ -3,19 +3,18 @@
     name: common
     tasks_from: app-setup
 
-- name: noedjs setup
+- name: python setup
   import_role:
     name: common
-    tasks_from: nodejs
+    tasks_from: python
 
-- name:  systemd setup
+- name: systemd setup
   import_role:
     name: common
     tasks_from: systemd-setup
 
-- name: enable and restart
-  service:
-    name: user
-    enabled: yes
-    state: restarted
+- name: restart
+  import_role:
+    name: common
+    tasks_from: restart
     
