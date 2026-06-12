@@ -16,9 +16,9 @@
       security_groups:
       - "roboshop-{{ item }}"
       - roboshop-common
-    loop: "{{ instances }}"
-    register: ec2_output
-    when: action == "create"
+     loop: "{{ instances }}"
+     register: ec2_output
+     when: action == "create"
 
   # - name: print output
   #   debug:
