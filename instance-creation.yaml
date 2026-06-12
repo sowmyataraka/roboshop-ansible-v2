@@ -86,7 +86,7 @@
 #      when: action == "delete"
 
 - name: roboshop instances management
-  hosts: local
+  hosts: localhost
   connection: local
   vars:
     instances: ["mongodb", "redis", "mysql", "rabbitmq", "catalogue", "user", "cart", "shipping", "payment", "frontend"]
