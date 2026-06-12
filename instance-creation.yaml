@@ -102,7 +102,7 @@
       region: us-east-1
       security_groups:
       - "roboshop-{{ item }}"
-      - roboshop-common
+      - roboshop-commo
     loop: "{{ instances }}"
     register: ec2_output
     when: action == "create"
