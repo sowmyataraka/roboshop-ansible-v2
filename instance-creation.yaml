@@ -4,7 +4,7 @@
   vars:
     instances: ["mongodb", "redis", "mysql", "rabbitmq", "catalogue", "user", "cart", "shipping", "payment", "frontend"]
     image_id: ami-0220d79f3f480ecf5
-    domain_name: daws90s.uk # replace with your domain
+    domain_name: daws90s.uk   # replace with your domain
     action: create
   tasks:
   - name: create ec2 instances
